@@ -1,0 +1,35 @@
+package array;
+
+import java.util.Scanner;
+
+public class ArrayExample {
+
+	public static void main(String[] args) {
+		// scanner class object 
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("enter the size of the array: ");
+		int size=sc.nextInt();
+		
+		int[] numbers=new int[size];
+		
+		System.out.println("Enter" + size + "integers");
+		
+		for(int i = 0; i < size; i++)
+		{
+			numbers[i]=sc.nextInt();
+		}
+		
+		//Display the elements entered by the user 
+		System.out.println("elements in the array: ");
+		
+		for(int i = 0; i < size; i++)
+		{ 
+			System.out.print(numbers[i] +" ");
+		}
+
+		sc.close();
+
+	}
+
+}
